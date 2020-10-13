@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import xlrd
 
-# This is for indicating a map between a column in dab and a column in excel. for example here
+# This is for indicating a map between a column in the database and a column in excel. for example here
 # the "full_name" is a column in the database and the "name" is a column field in excel structure should be like this:
 # dynamic_excel_column = {
 #     "db_column_name": {"name": "excel_column_name", "index": 0, "value": ""}, ...
@@ -62,5 +62,5 @@ def read_excel(loc, header_row_num):
 
 
 if __name__ == "__main__":
-    # Should start from zero.
+    # start usually from zero but you can assign any number.
     read_excel('PATH TO xlsx FILE', 0) 
